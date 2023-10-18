@@ -2,6 +2,7 @@ package com.sboot.projectOne.greeting;
 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,5 +24,11 @@ public class GreetingController {
     @ResponseBody
     public String postGreet(){
         return "hello user in post method";
+    }
+
+    @DeleteMapping("/greet")
+    @ResponseBody
+    public String noGreet(){
+        return "bye bye";
     }
 }
