@@ -16,8 +16,7 @@ public class GreetingController {
     @GetMapping("/greeting")
     @ResponseBody
     public String getGreet(){
-        System.out.println("hello");
-        return "hello user in get method";
+            return "hello user in get method";
     }
 
     @PostMapping("/greet")
