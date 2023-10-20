@@ -16,6 +16,7 @@ public class GreetingController {
     @GetMapping("/greeting")
     @ResponseBody
     public String getGreet(){
+        System.out.println("HEllO");
             return "hello user in get method";
     }
 
